@@ -25,6 +25,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseGlobalizationConfig();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
